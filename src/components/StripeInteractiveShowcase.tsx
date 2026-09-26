@@ -96,9 +96,9 @@ export function StripeInteractiveShowcase() {
             <span>Interactive Platform Demo</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-[-0.025em] text-[var(--color-text-primary)] leading-tight">
-            The private member cockpit.{' '}
+            The private student workspace.{' '}
             <span className="text-[var(--color-text-secondary)] opacity-75 font-normal">
-              A high-fidelity visual preview of Everything Foreign’s custom membership system, role-based workflows, and progress tracking.
+              An integrated, high-fidelity portal for Everything Foreign’s custom curriculum, role-based workflows, and stateful progress tracking.
             </span>
           </h2>
         </div>

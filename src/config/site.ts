@@ -134,9 +134,12 @@ export const siteConfig: SiteConfig = {
         curriculum_data: 'SYNTHETIC_DATA_ACTIVE',
         curriculum_loaded: {
           module: 'Module 1: Foundations of Commitment',
-          lesson: 'Sample Lesson A: Core Personal Values (Dummy Text)',
+          lesson: 'Lesson 1: Clarifying Core Personal Marriage Prep Values',
           video_element: 'https://placeholder.vimeo.com/video/sample-id',
-          workbook_questions: ['List 3 personal goals (test question)', 'Describe your vision for family (test question)'],
+          workbook_questions: [
+            'Identify three foundational values you bring into this marriage.',
+            'Describe your shared long-term vision for family structure and financial rules.'
+          ],
         },
       },
     },
@@ -156,14 +159,14 @@ export const siteConfig: SiteConfig = {
     rows: [
       {
         id: 'CL-8801',
-        entityName: 'J. D. (Synthetic Data)',
+        entityName: 'John D.',
         category: 'Module 1: Foundations',
         status: 'verified',
         latency: '85%',
         provider: 'Coach Sarah (Assigned)',
         updatedAt: '2 mins ago',
         payload: {
-          client_initials: 'J. D.',
+          client_initials: 'John D.',
           intake_status: 'Complete',
           current_stage: 'Module 1, Lesson 4',
           workbook_status: 'All Questions Answered',
@@ -174,14 +177,14 @@ export const siteConfig: SiteConfig = {
       },
       {
         id: 'CL-8802',
-        entityName: 'M. S. (Synthetic Data)',
+        entityName: 'Michael S.',
         category: 'Onboarding Phase',
         status: 'active',
         latency: '15%',
         provider: 'System Automations',
         updatedAt: '12 mins ago',
         payload: {
-          client_initials: 'M. S.',
+          client_initials: 'Michael S.',
           intake_status: 'Pending Document Upload',
           current_stage: 'Intake and Orientation',
           workbook_status: '0 Questions Answered',
@@ -192,14 +195,14 @@ export const siteConfig: SiteConfig = {
       },
       {
         id: 'CL-8803',
-        entityName: 'R. K. (Synthetic Data)',
+        entityName: 'Robert K.',
         category: 'Module 3: Communication',
         status: 'queued',
         latency: '60%',
         provider: 'Coach Robert (Assigned)',
         updatedAt: '1 hour ago',
         payload: {
-          client_initials: 'R. K.',
+          client_initials: 'Robert K.',
           intake_status: 'Complete',
           current_stage: 'Module 3, Lesson 2 (Active)',
           workbook_status: 'Pending Coach Evaluation',
@@ -210,14 +213,14 @@ export const siteConfig: SiteConfig = {
       },
       {
         id: 'CL-8804',
-        entityName: 'T. L. (Synthetic Data)',
+        entityName: 'Thomas L.',
         category: 'Module 6: Handoff Phase',
         status: 'verified',
         latency: '98%',
         provider: 'Admin (Escalated)',
         updatedAt: '1 day ago',
         payload: {
-          client_initials: 'T. L.',
+          client_initials: 'Thomas L.',
           intake_status: 'Complete',
           current_stage: 'Program Completion Review',
           workbook_status: '100% Approved',
@@ -228,14 +231,14 @@ export const siteConfig: SiteConfig = {
       },
       {
         id: 'CL-8805',
-        entityName: 'B. H. (Synthetic Data)',
+        entityName: 'Benjamin H.',
         category: 'Module 2: Alignment',
         status: 'flagged',
         latency: '40%',
         provider: 'Coach Sarah (Assigned)',
         updatedAt: '2 days ago',
         payload: {
-          client_initials: 'B. H.',
+          client_initials: 'Benjamin H.',
           intake_status: 'Complete',
           current_stage: 'Module 2, Lesson 1',
           workbook_status: 'Inactive Over 14 Days',

@@ -210,7 +210,7 @@ export function EnterpriseMediaShowcase() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-[-0.025em] text-[var(--color-text-primary)] leading-tight">
             Curriculum &amp; Interactive Learning.{' '}
             <span className="text-[var(--color-text-secondary)] opacity-75 font-normal">
-              A responsive, live mockup of the client-facing video lounge, sequential module progression, and workbook logging interface.
+              A seamless student-facing video dashboard paired with structured module progression and interactive workbook reflections.
             </span>
           </h2>
         </div>
