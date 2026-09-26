@@ -50,7 +50,7 @@ export function Footer() {
               <div className="pt-2.5 border-t border-[var(--color-border)] flex items-center justify-between gap-2 text-xs font-mono">
                 <div className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-medium whitespace-nowrap min-w-0">
                   <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
-                  <span className="text-[11px] font-semibold truncate">Multi-Provider Fallback Ready</span>
+                  <span className="text-[11px] font-semibold">Fallback Active</span>
                 </div>
                 <span className="inline-flex items-center rounded-md bg-emerald-50 dark:bg-emerald-950/60 px-2 py-0.5 text-[10px] font-mono font-semibold text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 whitespace-nowrap shrink-0">
                   100% Codebase Ownership
@@ -69,23 +69,23 @@ export function Footer() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-2 text-[11px] font-mono text-[var(--color-text-secondary)]">
                   <div className="flex items-center gap-1.5 rounded-md bg-[var(--color-surface)] border border-[var(--color-border)] px-2.5 py-1.5 shadow-2xs">
                     <Terminal className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
-                    <span className="truncate">Next.js 15 Core</span>
+                    <span>Next.js App</span>
                   </div>
                   <div className="flex items-center gap-1.5 rounded-md bg-[var(--color-surface)] border border-[var(--color-border)] px-2.5 py-1.5 shadow-2xs">
                     <Cpu className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
-                    <span className="truncate">Dual-Model AI Fallback</span>
+                    <span>AI Fallback</span>
                   </div>
                   <div className="flex items-center gap-1.5 rounded-md bg-[var(--color-surface)] border border-[var(--color-border)] px-2.5 py-1.5 shadow-2xs">
                     <Workflow className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
-                    <span className="truncate">Inngest / Event Queues</span>
+                    <span>Event Queues</span>
                   </div>
                   <div className="flex items-center gap-1.5 rounded-md bg-[var(--color-surface)] border border-[var(--color-border)] px-2.5 py-1.5 shadow-2xs">
                     <Code2 className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
-                    <span className="truncate">TypeScript / Python</span>
+                    <span>TypeScript</span>
                   </div>
                 </div>
                 <p className="text-[11px] text-[var(--color-text-muted)] leading-relaxed pt-1">
-                  Engineered with strict separation of concerns: role-isolated schemas, PII encryption, sequential prerequisite paths, and stateful completion audits.
+                  Secured with role access, data encryption, sequential modules, and progress checks.
                 </p>
               </div>
 
