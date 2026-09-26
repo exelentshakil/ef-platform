@@ -54,7 +54,7 @@ const STATS: BackboneStat[] = [
   },
   {
     value: '1.2s P99',
-    label: 'database audit log serialization and stateful progress sync',
+    label: 'automated student workbook saves and stateful progress sync',
     color: '#0d9488',
     domain: [0, 52],
     sparkline: [

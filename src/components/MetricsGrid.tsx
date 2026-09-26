@@ -310,28 +310,28 @@ export function MetricsGrid() {
             <div className="flex items-center gap-2">
               <span className="h-2.5 w-2.5 rounded-full bg-[#00D924] animate-pulse shrink-0" />
               <span className="text-sm sm:text-[15px] font-bold tracking-tight text-[var(--color-text-primary)]">
-                Multi-Agent Context Bus • Sub-50ms Handoff Telemetry
+                Stateful Student Progress Sync • Active Lesson Feed
               </span>
               <span className="rounded-[4px] bg-[#533AFD]/8 text-[#533AFD] border border-[#533AFD]/20 dark:bg-[#7A68FF]/15 dark:text-[#7A68FF] dark:border-[#7A68FF]/30 px-2.5 py-0.5 text-xs font-semibold">
                 Live Stream
               </span>
             </div>
             <p className="text-xs sm:text-sm text-[var(--color-text-secondary)] mt-1">
-              Real-time context serialization &amp; throughput across Intake Audit → Workbook Match → Evaluation Sync → Access Guard
+              Real-time progress sync across Student Intake → Lesson Engagement → Workbook Reflection → Counselor Review → Milestone Unlock.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-4 text-xs sm:text-[13px] text-[var(--color-text-secondary)]">
             <span className="flex items-center gap-1.5">
               <span className="h-2 w-2 rounded-full bg-[#533AFD]" />
-              Handoffs: <strong className="text-[var(--color-text-primary)]">6,450 / min</strong>
+              Active Students: <strong className="text-[var(--color-text-primary)]">1,420</strong>
             </span>
             <span className="flex items-center gap-1.5">
               <span className="h-2 w-2 rounded-full bg-[#057A55]" />
-              P99: <strong className="text-[#057A55] dark:text-emerald-400">13.2ms</strong>
+              Sync Status: <strong className="text-[#057A55] dark:text-emerald-400">Verified</strong>
             </span>
             <span className="flex items-center gap-1.5">
               <span className="h-2 w-2 rounded-full bg-[#00D4FF]" />
-              Zero Loss: <strong className="text-[#00D4FF] dark:text-[#00D4FF]">100%</strong>
+              Data Escrow: <strong className="text-[#00D4FF] dark:text-[#00D4FF]">Secure</strong>
             </span>
           </div>
         </div>
@@ -378,12 +378,12 @@ export function MetricsGrid() {
                             {data.stage}
                           </div>
                           <div className="text-[#533AFD] dark:text-[#7A68FF] flex items-center justify-between gap-4 pt-0.5">
-                            <span>Throughput:</span>
-                            <span className="font-bold">{data.ops?.toLocaleString()} handoffs/min</span>
+                            <span>Active Volume:</span>
+                            <span className="font-bold">{data.ops?.toLocaleString()} event metrics</span>
                           </div>
                           <div className="text-[#057A55] dark:text-emerald-400 flex items-center justify-between gap-4">
-                            <span>P99 Latency:</span>
-                            <span className="font-bold">{data.latency}ms</span>
+                            <span>Logging Latency:</span>
+                            <span className="font-bold">{data.latency}s</span>
                           </div>
                         </div>
                       );

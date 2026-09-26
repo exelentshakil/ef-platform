@@ -115,27 +115,27 @@ export default function HomePage() {
 
       <main className="w-full max-w-full min-w-0 overflow-x-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 space-y-16">
-          {/* Section 1: Cockpit Telemetry & KPI Grid */}
+          {/* Section 1: Integrated Student Analytics & KPI Grid */}
           <section id="cockpit" className="scroll-mt-20">
             <div className="mb-4">
               <span className="text-xs font-mono font-semibold uppercase tracking-wider text-[#533AFD] dark:text-[#7A68FF]">
-                Live System Observability
+                Integrated Student Analytics
               </span>
               <h2 className="text-2xl font-bold tracking-tight text-[var(--color-text-primary)]">
-                Real-Time Performance & Pipeline Health
+                Real-Time Engagement &amp; Marital Alignment Tracking
               </h2>
             </div>
             <MetricsGrid />
           </section>
 
-          {/* Section 2: Interactive AI Pipeline & Governance Engine */}
+          {/* Section 2: Secure Coaching Workflows & Authorization Engine */}
           <section id="pipeline" className="scroll-mt-20">
             <div className="mb-4">
               <span className="text-xs font-mono font-semibold uppercase tracking-wider text-[#533AFD] dark:text-[#7A68FF]">
-                Production AI Workflow
+                Secure Coaching Workflows
               </span>
               <h2 className="text-2xl font-bold tracking-tight text-[var(--color-text-primary)]">
-                Dual-Provider Inference & Security Guardrails
+                Certified Counselor Dashboard &amp; Security Auditing
               </h2>
             </div>
             <HeroWorkflowEngine />

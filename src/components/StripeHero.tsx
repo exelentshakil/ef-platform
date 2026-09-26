@@ -62,21 +62,21 @@ export function StripeHero({
             {/* Live Telemetry Eyebrow */}
             <div className="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-surface)]/95 px-3.5 py-1.5 text-xs sm:text-[13.5px] text-[var(--color-text-secondary)] shadow-2xs backdrop-blur-sm">
               <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
-              <span className="font-bold text-[var(--color-text-primary)]">Security Posture:</span>
-              <span>100% Encrypted IP &amp; Client PII</span>
+              <span className="font-bold text-[var(--color-text-primary)]">Platform Status:</span>
+              <span>Live 3-Day Free Trial Available</span>
               <ChevronRight className="h-3.5 w-3.5 text-[var(--color-text-muted)]" />
             </div>
 
             {/* Master Stripe Two-Tone Typography Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-semibold tracking-[-0.03em] text-[var(--color-text-primary)] leading-[1.12]">
-                {siteConfig.name} infrastructure to{" "}
+                {siteConfig.name} - The Premium Men's Marriage-Prep Learning &amp;{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#635BFF] via-[#7A68FF] to-[#00D4FF] font-bold">
-                  secure your curriculum.
+                  Progress Portal.
                 </span>
               </h1>
               <p className="text-lg sm:text-xl lg:text-[20px] text-[#425466] dark:text-slate-300 font-normal leading-relaxed max-w-2xl">
-                {siteConfig.description}
+                A structured, private developmental program for men preparing for marriage and long-term commitment. Secure your intellectual property, enforce strict role-based coaching, and track genuine student workbook progress statefully.
               </p>
             </div>
 
@@ -86,7 +86,7 @@ export function StripeHero({
                 onClick={onLaunchCockpit || onExplore}
                 className="h-11 px-6 text-[15px] font-semibold bg-[#635BFF] hover:bg-[#533AFD] text-white shadow-xs rounded-[4px] transition-all cursor-pointer flex items-center gap-1.5"
               >
-                Launch interactive cockpit
+                Launch Student Portal Demo
                 <ChevronRight className="h-4 w-4" />
               </Button>
 
@@ -95,7 +95,7 @@ export function StripeHero({
                 onClick={onExploreSchemas || onExplore}
                 className="h-11 px-5.5 text-[15px] font-medium border-[var(--color-border)] bg-[var(--color-surface)]/90 hover:bg-[var(--color-panel-subtle)] text-[var(--color-text-primary)] rounded-[4px] shadow-2xs cursor-pointer flex items-center gap-1.5 backdrop-blur-xs"
               >
-                Explore API &amp; schemas
+                Explore Security &amp; Admin Controls
                 <ChevronRight className="h-4 w-4 text-[var(--color-text-muted)]" />
               </Button>
             </div>
@@ -104,26 +104,26 @@ export function StripeHero({
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 text-xs font-medium max-w-2xl">
               <div className="flex items-center gap-1.5 p-2 rounded bg-[var(--color-panel-subtle)] border border-[var(--color-border)]/70 text-[var(--color-text-primary)]">
                 <span className="h-2 w-2 rounded-full bg-emerald-500 shrink-0" />
-                <span className="truncate text-[11.5px]">PostgreSQL Isolation</span>
+                <span className="truncate text-[11.5px]">12 Marital Modules</span>
               </div>
               <div className="flex items-center gap-1.5 p-2 rounded bg-[var(--color-panel-subtle)] border border-[var(--color-border)]/70 text-[var(--color-text-primary)]">
                 <span className="h-2 w-2 rounded-full bg-[#533AFD] shrink-0" />
-                <span className="truncate text-[11.5px]">Zero Content Leaks</span>
+                <span className="truncate text-[11.5px]">4 Secured Roles</span>
               </div>
               <div className="flex items-center gap-1.5 p-2 rounded bg-[var(--color-panel-subtle)] border border-[var(--color-border)]/70 text-[var(--color-text-primary)]">
                 <span className="h-2 w-2 rounded-full bg-teal-500 shrink-0" />
-                <span className="truncate text-[11.5px]">Sub-15ms Progress Sync</span>
+                <span className="truncate text-[11.5px]">Stateful Workbooks</span>
               </div>
               <div className="flex items-center gap-1.5 p-2 rounded bg-[var(--color-panel-subtle)] border border-[var(--color-border)]/70 text-[var(--color-text-primary)]">
                 <span className="h-2 w-2 rounded-full bg-blue-500 shrink-0" />
-                <span className="truncate text-[11.5px]">Role-Based Security</span>
+                <span className="truncate text-[11.5px]">Counselor Audits</span>
               </div>
             </div>
 
             {/* Stripe Institutional Enterprise Client Logos Strip */}
             <div className="pt-8 border-t border-[var(--color-border)]/80 max-w-2xl">
               <p className="text-xs font-semibold uppercase tracking-wider text-[var(--color-text-secondary)] mb-3">
-                Powered by enterprise-grade technologies &amp; frameworks
+                Secured with enterprise-grade cloud architecture
               </p>
               <div className="flex flex-wrap items-center justify-between gap-6 opacity-90 grayscale hover:grayscale-0 transition-all text-xs font-mono font-bold text-[var(--color-text-secondary)]">
                 <span>Supabase</span>
@@ -136,28 +136,28 @@ export function StripeHero({
             </div>
           </div>
 
-          {/* Right Column: Floating Interactive Glass Telemetry HUD (Over Wave Canvas, Zero Whitespace) */}
+          {/* Right Column: Floating Interactive Glass Curriculum Preview HUD (Over Wave Canvas) */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <div className="w-full max-w-md rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]/85 backdrop-blur-xl p-5 sm:p-6 shadow-xl space-y-4 relative">
-              {/* Card Aura Header (Zero-Collision 570px Bounded HUD) */}
+              {/* Card Aura Header */}
               <div className="flex items-center justify-between pb-3.5 border-b border-[var(--color-border)]/80 gap-2">
                 <div className="flex items-center gap-2 min-w-0">
-                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-[#635BFF] animate-pulse shrink-0" />
                   <span className="text-sm font-bold text-[var(--color-text-primary)] truncate">
-                    Curriculum Portal Telemetry
+                    Course Access &amp; Portal Status
                   </span>
                 </div>
                 <span className="rounded-[4px] bg-[#533AFD]/10 text-[#533AFD] dark:bg-[#7A68FF]/20 dark:text-[#7A68FF] px-2.5 py-0.5 text-xs font-semibold border border-[#533AFD]/20 shrink-0 whitespace-nowrap">
-                  Role Cockpit Active
+                  Enrolled &amp; Active
                 </span>
               </div>
 
-              {/* Real-time Subsystem Status Rows */}
+              {/* Course Features status Rows */}
               <div className="space-y-3">
                 {[
-                  { label: 'CURRICULUM SECURITY', value: 'IP Masking Encryption', metric: '100% Masked', subtext: 'Least privilege enforced' },
-                  { label: 'PROGRESS ENGINE', value: 'Stateful Activity Log', metric: 'Zero Checkboxes', subtext: 'Real-time text check' },
-                  { label: 'ROLE MANAGEMENT', value: 'JWT Authorization Scope', metric: 'Active Guard', subtext: 'Coach/Member isolated' },
+                  { label: 'MARRIAGE CURRICULUM', value: '12 Structured Modules', metric: '60 Videos', subtext: 'Full HD streaming course' },
+                  { label: 'WORKBOOK REFLECTIONS', value: 'Interactive Study Sheets', metric: 'Stateful', subtext: 'Deep self-discovery writing' },
+                  { label: 'COACHING ASSISTANCE', value: 'Dedicated Lead Coaches', metric: '1-on-1 Review', subtext: 'Private workbook audits' },
                 ].map((row, i) => (
                   <div key={i} className="flex items-center justify-between p-3 rounded-lg bg-[var(--color-panel-subtle)] border border-[var(--color-border)]/80">
                     <div className="space-y-0.5 min-w-0 pr-2">
@@ -165,7 +165,7 @@ export function StripeHero({
                       <div className="text-[14.5px] font-bold text-[var(--color-text-primary)] truncate">{row.value}</div>
                     </div>
                     <div className="text-right shrink-0">
-                      <div className="text-sm font-bold text-[#057A55] dark:text-emerald-400">{row.metric}</div>
+                      <div className="text-sm font-bold text-[#635BFF] dark:text-[#7A68FF]">{row.metric}</div>
                       <div className="text-xs text-[var(--color-text-secondary)]">{row.subtext}</div>
                     </div>
                   </div>
@@ -178,9 +178,9 @@ export function StripeHero({
                   <div className="flex items-center justify-between text-xs text-slate-300 pb-1.5 border-b border-slate-800">
                     <span className="flex items-center gap-2 font-medium">
                       <Radio className="w-3.5 h-3.5 text-[#00D4FF] animate-pulse" />
-                      Secure Video Buffer (HLS CDN)
+                      Marital Foundations Video Stream (HD)
                     </span>
-                    <span className="font-mono text-xs text-slate-400">{simulatedChunks} / 24 Chunks</span>
+                    <span className="font-mono text-xs text-slate-400">{simulatedChunks} / 24 Chunks Buffered</span>
                   </div>
 
                   {/* Buffer Progress Bar */}
@@ -193,7 +193,7 @@ export function StripeHero({
 
                   <div className="flex items-center justify-between pt-1">
                     <span className="text-xs text-slate-300">
-                      Decoupled Sync Speed: <strong className="text-emerald-400 font-semibold">12ms</strong>
+                      Streaming Speed: <strong className="text-emerald-400 font-semibold">1080p Ultra</strong>
                     </span>
                     <button
                       type="button"
@@ -204,12 +204,12 @@ export function StripeHero({
                       {streamSimulating ? (
                         <>
                           <RefreshCw className="w-3 h-3 animate-spin" />
-                          Syncing...
+                          Buffering...
                         </>
                       ) : (
                         <>
                           <Play className="w-3 h-3" />
-                          Simulate Progress Sync
+                          Simulate Video Play
                         </>
                       )}
                     </button>
@@ -221,9 +221,9 @@ export function StripeHero({
               <div className="flex items-center justify-between text-xs text-[var(--color-text-secondary)] pt-1 font-medium">
                 <span className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
-                  PII &amp; IP Protection Active
+                  Student Identity &amp; Progress Protected
                 </span>
-                <span className="text-[var(--color-text-muted)]">Supabase RLS</span>
+                <span className="text-[var(--color-text-muted)]">AES-256 SSL</span>
               </div>
             </div>
           </div>
