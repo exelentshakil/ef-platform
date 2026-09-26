@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { LayoutGrid, Users, MessageSquare, ChevronRight } from 'lucide-react';
+import { ShieldCheck, Sliders, Users, ChevronRight } from 'lucide-react';
 
 export interface StripeFeatureGridProps {
   onOpenGovernance?: () => void;
@@ -22,26 +22,26 @@ interface FeatureItem {
 const FEATURES: FeatureItem[] = [
   {
     id: 'services',
-    icon: LayoutGrid,
-    title: 'Professional services.',
-    description: 'Get tailored architectural guidance from senior systems engineers on Cloudflare Stream CDN, Replit backend stabilization, and Apple StoreKit 2 integration.',
-    linkText: 'View services & workflow',
+    icon: Users,
+    title: 'Role-based membership portals.',
+    description: 'Provide secure, isolated dashboards for John Doe (Member) or Sarah (Coach) to log workbook entries, schedule calls, and audit course completions in real time.',
+    linkText: 'Test simulated member cockpit',
     action: 'pipeline',
   },
   {
     id: 'certifications',
-    icon: Users,
-    title: 'Securiti-certified experts.',
-    description: 'Work with a validated AI governance architect specializing in Gartner AI TRiSM, NIST AI RMF, and inline LLM firewalls (Cert ID: 14B411BCE-14B411A3D-1451CFE76).',
-    linkText: 'View certifications & audit',
+    icon: ShieldCheck,
+    title: 'Proprietary curriculum protection.',
+    description: 'Enforce complete cryptographic isolation. Your intellectual property and marriage curriculum remain encrypted in PostgreSQL while developers build on synthetic tables.',
+    linkText: 'Check security & role vault',
     action: 'governance',
   },
   {
     id: 'retainers',
-    icon: MessageSquare,
-    title: 'Support & retainers.',
-    description: 'Receive ongoing operational monitoring, Inngest background event queues, automated workout generation failover, and strict 99.999% SLA response tracking.',
-    linkText: 'View execution logs & SLA',
+    icon: Sliders,
+    title: 'Genuine progress verification.',
+    description: 'Eliminate simple checkboxes. Progress is calculated statefully based on written answer validation, interactive timing, and direct staff evaluation review cycles.',
+    linkText: 'View member progress logs',
     action: 'logs',
   },
 ];
@@ -74,9 +74,9 @@ export function StripeFeatureGrid({
         {/* Two-Tone Section Headline with Stripe Opacity Balance */}
         <div className="max-w-3xl mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-[-0.02em] text-[var(--color-text-primary)]">
-            Powering businesses of all sizes.{' '}
+            Tailored for Everything Foreign.{' '}
             <span className="text-[var(--color-text-secondary)] opacity-75 font-normal">
-              Scale your mobile backend on a battle-tested architecture that adapts to your growth.
+              A scalable, role-isolated LMS architecture designed to secure your intellectual curriculum and track genuine progress.
             </span>
           </h2>
         </div>

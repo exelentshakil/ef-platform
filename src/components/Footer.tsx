@@ -85,7 +85,7 @@ export function Footer() {
                   </div>
                 </div>
                 <p className="text-[11px] text-[var(--color-text-muted)] leading-relaxed pt-1">
-                  Engineered with strict separation of concerns: deterministic math, schema enforcement, zero-downtime AI routing, and sub-50ms database operations.
+                  Engineered with strict separation of concerns: role-isolated schemas, PII encryption, sequential prerequisite paths, and stateful completion audits.
                 </p>
               </div>
 

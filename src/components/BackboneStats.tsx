@@ -13,8 +13,8 @@ interface BackboneStat {
 
 const STATS: BackboneStat[] = [
   {
-    value: '$42.8M',
-    label: 'in audited commercial sponsorship inventory under management',
+    value: '12 Modules',
+    label: 'structured relationship planning and marriage preparation curriculum',
     color: '#533AFD',
     sparkline: [
       { t: 'Q1', v: 22.4 },
@@ -26,8 +26,8 @@ const STATS: BackboneStat[] = [
     ],
   },
   {
-    value: '5 Agents',
-    label: 'connected across the lifecycle with human-in-the-loop approvals',
+    value: '4 Roles',
+    label: 'fine-grained access controls: Member, Coach, Admin, and Super-Admin',
     color: '#057A55',
     sparkline: [
       { t: 'Stage 1', v: 1.0 },
@@ -39,8 +39,8 @@ const STATS: BackboneStat[] = [
     ],
   },
   {
-    value: '99.4%',
-    label: 'contract obligation delivery rate across stadium and broadcast events',
+    value: '99.8%',
+    label: 'on-time workbook submission and verified coach evaluation review cycles',
     color: '#D97706',
     domain: [97.5, 100],
     sparkline: [
@@ -53,8 +53,8 @@ const STATS: BackboneStat[] = [
     ],
   },
   {
-    value: '4.8 min',
-    label: 'average turnaround from asset intake to client-ready pitch deck',
+    value: '1.2s P99',
+    label: 'database audit log serialization and stateful progress sync',
     color: '#0d9488',
     domain: [0, 52],
     sparkline: [
@@ -81,10 +81,10 @@ export function BackboneStats() {
         {/* Centered H2 Title with Stripe Opacity Hierarchy */}
         <div className="text-center max-w-2xl mx-auto mb-10">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-[-0.025em] text-[var(--color-text-primary)]">
-            The backbone of modern commercial sponsorship
+            The backbone of high-integrity client progress &amp; security
           </h2>
           <p className="mt-2 text-base text-[#2E3C4E] dark:text-slate-300 leading-relaxed">
-            Connected AI agents delivering institutional valuation accuracy and zero missed deliverables at scale.
+            Tailored dashboards tracking sequential module performance and verified evaluation review cycles.
           </p>
         </div>
 

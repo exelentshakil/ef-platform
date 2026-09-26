@@ -56,14 +56,14 @@ export function StripeHero({
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
-          {/* Left Column: Two-Tone Typography, Value Prop & Direct Action Triggers (100% High-Contrast Clean Background) */}
+
+          {/* Left Column: Two-Tone Typography, Value Prop & Direct Action Triggers */}
           <div className="lg:col-span-7 space-y-6">
             {/* Live Telemetry Eyebrow */}
             <div className="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-surface)]/95 px-3.5 py-1.5 text-xs sm:text-[13.5px] text-[var(--color-text-secondary)] shadow-2xs backdrop-blur-sm">
-              <span className="h-2 w-2 rounded-full bg-[#00D924] animate-pulse shrink-0" />
-              <span className="font-bold text-[var(--color-text-primary)]">Enterprise Availability:</span>
-              <span>99.999% Historical Uptime</span>
+              <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+              <span className="font-bold text-[var(--color-text-primary)]">Security Posture:</span>
+              <span>100% Encrypted IP &amp; Client PII</span>
               <ChevronRight className="h-3.5 w-3.5 text-[var(--color-text-muted)]" />
             </div>
 
@@ -72,7 +72,7 @@ export function StripeHero({
               <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-semibold tracking-[-0.03em] text-[var(--color-text-primary)] leading-[1.12]">
                 {siteConfig.name} infrastructure to{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#635BFF] via-[#7A68FF] to-[#00D4FF] font-bold">
-                  scale your operations.
+                  secure your curriculum.
                 </span>
               </h1>
               <p className="text-lg sm:text-xl lg:text-[20px] text-[#425466] dark:text-slate-300 font-normal leading-relaxed max-w-2xl">
@@ -104,35 +104,34 @@ export function StripeHero({
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 text-xs font-medium max-w-2xl">
               <div className="flex items-center gap-1.5 p-2 rounded bg-[var(--color-panel-subtle)] border border-[var(--color-border)]/70 text-[var(--color-text-primary)]">
                 <span className="h-2 w-2 rounded-full bg-emerald-500 shrink-0" />
-                <span className="truncate text-[11.5px]">100% Private Cloud ML</span>
+                <span className="truncate text-[11.5px]">PostgreSQL Isolation</span>
               </div>
               <div className="flex items-center gap-1.5 p-2 rounded bg-[var(--color-panel-subtle)] border border-[var(--color-border)]/70 text-[var(--color-text-primary)]">
                 <span className="h-2 w-2 rounded-full bg-[#533AFD] shrink-0" />
-                <span className="truncate text-[11.5px]">Zero Hallucinations</span>
+                <span className="truncate text-[11.5px]">Zero Content Leaks</span>
               </div>
               <div className="flex items-center gap-1.5 p-2 rounded bg-[var(--color-panel-subtle)] border border-[var(--color-border)]/70 text-[var(--color-text-primary)]">
                 <span className="h-2 w-2 rounded-full bg-teal-500 shrink-0" />
-                <span className="truncate text-[11.5px]">Sub-15ms Speed</span>
+                <span className="truncate text-[11.5px]">Sub-15ms Progress Sync</span>
               </div>
               <div className="flex items-center gap-1.5 p-2 rounded bg-[var(--color-panel-subtle)] border border-[var(--color-border)]/70 text-[var(--color-text-primary)]">
                 <span className="h-2 w-2 rounded-full bg-blue-500 shrink-0" />
-                <span className="truncate text-[11.5px]">Shipped in Days</span>
+                <span className="truncate text-[11.5px]">Role-Based Security</span>
               </div>
             </div>
 
             {/* Stripe Institutional Enterprise Client Logos Strip */}
             <div className="pt-8 border-t border-[var(--color-border)]/80 max-w-2xl">
               <p className="text-xs font-semibold uppercase tracking-wider text-[var(--color-text-secondary)] mb-3">
-                Trusted by modern enterprise engineering teams
+                Powered by enterprise-grade technologies &amp; frameworks
               </p>
-              <div className="flex flex-wrap items-center justify-between gap-5 opacity-90 grayscale hover:grayscale-0 transition-all">
-                <span className="text-[15px] sm:text-base font-bold tracking-tighter text-[var(--color-text-primary)] font-sans">amazon</span>
-                <span className="text-[15px] sm:text-base font-bold tracking-tight text-[var(--color-text-primary)] font-sans">NVIDIA</span>
-                <span className="text-[15px] sm:text-base font-semibold tracking-wide text-[var(--color-text-primary)] font-sans">Ford</span>
-                <span className="text-[15px] sm:text-base font-bold tracking-tight text-[var(--color-text-primary)] font-sans">coinbase</span>
-                <span className="text-[15px] sm:text-base font-semibold tracking-tight text-[var(--color-text-primary)] font-sans">Google</span>
-                <span className="text-[15px] sm:text-base font-bold tracking-tight text-[var(--color-text-primary)] font-sans">shopify</span>
-                <span className="text-[15px] sm:text-base font-medium tracking-tight text-[var(--color-text-primary)] font-sans">mindbody</span>
+              <div className="flex flex-wrap items-center justify-between gap-6 opacity-90 grayscale hover:grayscale-0 transition-all text-xs font-mono font-bold text-[var(--color-text-secondary)]">
+                <span>Supabase</span>
+                <span>PostgreSQL</span>
+                <span>Next.js 15</span>
+                <span>Inngest</span>
+                <span>TailwindCSS</span>
+                <span>Cloudflare CDN</span>
               </div>
             </div>
           </div>
@@ -143,23 +142,23 @@ export function StripeHero({
               {/* Card Aura Header (Zero-Collision 570px Bounded HUD) */}
               <div className="flex items-center justify-between pb-3.5 border-b border-[var(--color-border)]/80 gap-2">
                 <div className="flex items-center gap-2 min-w-0">
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#00D924] animate-pulse shrink-0" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse shrink-0" />
                   <span className="text-sm font-bold text-[var(--color-text-primary)] truncate">
-                    {((siteConfig as any).hud?.title) || 'Edge Engine • Telemetry Bus'}
+                    Curriculum Portal Telemetry
                   </span>
                 </div>
                 <span className="rounded-[4px] bg-[#533AFD]/10 text-[#533AFD] dark:bg-[#7A68FF]/20 dark:text-[#7A68FF] px-2.5 py-0.5 text-xs font-semibold border border-[#533AFD]/20 shrink-0 whitespace-nowrap">
-                  {((siteConfig as any).hud?.statusBadge) || 'Sub-50ms Edge'}
+                  Role Cockpit Active
                 </span>
               </div>
 
-              {/* Real-time Subsystem Status Rows (Schema-Driven from siteConfig) */}
+              {/* Real-time Subsystem Status Rows */}
               <div className="space-y-3">
-                {(((siteConfig as any).hud?.subsystems) || [
-                  { label: 'INGESTION ENGINE', value: 'Automated Pipeline Sync', metric: '100% Parsed', subtext: '0 schema errors' },
-                  { label: 'AI INFERENCE GATEWAY', value: 'Circuit Breaker Active', metric: '99.98% SLA', subtext: 'Dual-model failover' },
-                  { label: 'STATE RECONCILIATION', value: 'PostgreSQL Realtime', metric: '14.2ms P99', subtext: '0 duplicate writes' },
-                ]).map((row: any, i: number) => (
+                {[
+                  { label: 'CURRICULUM SECURITY', value: 'IP Masking Encryption', metric: '100% Masked', subtext: 'Least privilege enforced' },
+                  { label: 'PROGRESS ENGINE', value: 'Stateful Activity Log', metric: 'Zero Checkboxes', subtext: 'Real-time text check' },
+                  { label: 'ROLE MANAGEMENT', value: 'JWT Authorization Scope', metric: 'Active Guard', subtext: 'Coach/Member isolated' },
+                ].map((row, i) => (
                   <div key={i} className="flex items-center justify-between p-3 rounded-lg bg-[var(--color-panel-subtle)] border border-[var(--color-border)]/80">
                     <div className="space-y-0.5 min-w-0 pr-2">
                       <div className="text-[11px] font-bold uppercase tracking-wider text-[var(--color-text-secondary)] truncate">{row.label}</div>
@@ -179,7 +178,7 @@ export function StripeHero({
                   <div className="flex items-center justify-between text-xs text-slate-300 pb-1.5 border-b border-slate-800">
                     <span className="flex items-center gap-2 font-medium">
                       <Radio className="w-3.5 h-3.5 text-[#00D4FF] animate-pulse" />
-                      HLS CDN Stream Buffer
+                      Secure Video Buffer (HLS CDN)
                     </span>
                     <span className="font-mono text-xs text-slate-400">{simulatedChunks} / 24 Chunks</span>
                   </div>
@@ -194,7 +193,7 @@ export function StripeHero({
 
                   <div className="flex items-center justify-between pt-1">
                     <span className="text-xs text-slate-300">
-                      Throughput: <strong className="text-emerald-400 font-semibold">48.2 MB/s</strong>
+                      Decoupled Sync Speed: <strong className="text-emerald-400 font-semibold">12ms</strong>
                     </span>
                     <button
                       type="button"
@@ -205,12 +204,12 @@ export function StripeHero({
                       {streamSimulating ? (
                         <>
                           <RefreshCw className="w-3 h-3 animate-spin" />
-                          Streaming...
+                          Syncing...
                         </>
                       ) : (
                         <>
                           <Play className="w-3 h-3" />
-                          Simulate Stream
+                          Simulate Progress Sync
                         </>
                       )}
                     </button>
@@ -221,10 +220,10 @@ export function StripeHero({
               {/* Status Pill Footer */}
               <div className="flex items-center justify-between text-xs text-[var(--color-text-secondary)] pt-1 font-medium">
                 <span className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#00D924]" />
-                  Replit Socket Bottleneck Fixed
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
+                  PII &amp; IP Protection Active
                 </span>
-                <span className="text-[var(--color-text-muted)]">PgBouncer + Redis</span>
+                <span className="text-[var(--color-text-muted)]">Supabase RLS</span>
               </div>
             </div>
           </div>

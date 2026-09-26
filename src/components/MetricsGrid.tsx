@@ -20,27 +20,27 @@ import {
 import { siteConfig } from '@/config/site';
 
 // 4 Distinct Dope Wavy Sparkline Datasets for High-Signal Visual Fluidity
-const inventoryValuationTrend = [
-  { t: 'Jan', v: 24.2 },
-  { t: 'Mar', v: 28.5 },
-  { t: 'May', v: 26.8 },
-  { t: 'Jul', v: 33.4 },
-  { t: 'Sep', v: 38.1 },
-  { t: 'Nov', v: 36.5 },
-  { t: 'Dec', v: 42.8 },
+const alignmentScoreTrend = [
+  { t: 'Jan', v: 62.4 },
+  { t: 'Mar', v: 68.5 },
+  { t: 'May', v: 72.8 },
+  { t: 'Jul', v: 78.4 },
+  { t: 'Sep', v: 84.1 },
+  { t: 'Nov', v: 88.5 },
+  { t: 'Dec', v: 92.8 },
 ];
 
-const contractedPipelineTrend = [
+const workbookEntriesTrend = [
   { t: 'W1', v: 4.8 },
   { t: 'W2', v: 7.2 },
   { t: 'W3', v: 6.5 },
   { t: 'W4', v: 9.8 },
   { t: 'W5', v: 12.4 },
-  { t: 'W6', v: 11.9 },
-  { t: 'W7', v: 14.2 },
+  { t: 'W6', v: 13.9 },
+  { t: 'W7', v: 15.2 },
 ];
 
-const obligationDeliverySla = [
+const evaluationReviewSla = [
   { t: 'Mon', v: 98.4 },
   { t: 'Tue', v: 99.3 },
   { t: 'Wed', v: 98.8 },
@@ -62,16 +62,16 @@ const turnaroundVelocityTrend = [
 
 // High-Density Multi-Agent Context Bus Telemetry Timeline (Dope Fluid Waves)
 const telemetryStream = [
-  { time: '09:00', ops: 3820, latency: 14.8, stage: 'Asset Intake & CAD Audit' },
-  { time: '10:00', ops: 4790, latency: 14.1, stage: 'FMV Valuation Synthesizer' },
-  { time: '11:00', ops: 4210, latency: 13.9, stage: 'Brand Affinity & Exclusivity' },
-  { time: '12:00', ops: 5680, latency: 14.4, stage: 'Category Exclusivity Guard' },
-  { time: '13:00', ops: 5120, latency: 13.8, stage: 'Executive Pitch Deck Synth' },
-  { time: '14:00', ops: 6450, latency: 13.2, stage: 'Sponsorship CRM Stage Gate' },
-  { time: '15:00', ops: 5890, latency: 13.5, stage: 'Contract Schedule Drafting' },
-  { time: '16:00', ops: 6820, latency: 12.8, stage: 'Partner Portal Live Feed' },
-  { time: '17:00', ops: 6180, latency: 13.4, stage: 'Obligation Delivery Verifier' },
-  { time: '18:00', ops: 6450, latency: 13.2, stage: 'Human Signoff Confirmed' },
+  { time: '09:00', ops: 3820, latency: 14.8, stage: 'Intake Form Complete u_8801' },
+  { time: '10:00', ops: 4790, latency: 14.1, stage: 'Module 1 Workbook Received' },
+  { time: '11:00', ops: 4210, latency: 13.9, stage: 'Coach Evaluation Sync u_9012' },
+  { time: '12:00', ops: 5680, latency: 14.4, stage: 'Lesson 1.2 Access Released' },
+  { time: '13:00', ops: 5120, latency: 13.8, stage: 'JWT Verification Guard Active' },
+  { time: '14:00', ops: 6450, latency: 13.2, stage: 'Database SLA Logging Complete' },
+  { time: '15:00', ops: 5890, latency: 13.5, stage: 'Workbook Character Validation' },
+  { time: '16:00', ops: 6820, latency: 12.8, stage: 'Module 2 Workbook Received' },
+  { time: '17:00', ops: 6180, latency: 13.4, stage: 'Evaluation Review Released' },
+  { time: '18:00', ops: 6450, latency: 13.2, stage: 'Staff Verification Confirmed' },
 ];
 
 export function MetricsGrid() {
@@ -102,23 +102,23 @@ export function MetricsGrid() {
     if (!mounted) return null;
 
     if (idx === 0) {
-      // Card 0: Inventory FMV growth curve (Stripe Blurple wavy gradient area)
+      // Card 0: Client Alignment Score curve (Stripe Blurple wavy gradient area)
       return (
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={inventoryValuationTrend} margin={{ top: 2, right: 2, left: 2, bottom: 0 }}>
+          <AreaChart data={alignmentScoreTrend} margin={{ top: 2, right: 2, left: 2, bottom: 0 }}>
             <defs>
-              <linearGradient id="fmvGrad" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="alignmentGrad" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="#533AFD" stopOpacity={0.35} />
                 <stop offset="100%" stopColor="#533AFD" stopOpacity={0.0} />
               </linearGradient>
             </defs>
-            <YAxis hide domain={['dataMin - 3', 'dataMax + 2']} />
+            <YAxis hide domain={['dataMin - 5', 'dataMax + 5']} />
             <Tooltip
               content={({ active, payload }) => {
                 if (active && payload && payload.length) {
                   return (
                     <div className="rounded-[4px] bg-[var(--color-surface)] border border-[var(--color-border)] px-2.5 py-1 text-xs font-medium shadow-xs text-[var(--color-text-primary)]">
-                      <span className="font-bold text-[#533AFD] dark:text-[#7A68FF]">${payload[0].value}M</span> FMV
+                      <span className="font-bold text-[#533AFD] dark:text-[#7A68FF]">{payload[0].value}%</span> Alignment
                     </div>
                   );
                 }
@@ -130,7 +130,7 @@ export function MetricsGrid() {
               dataKey="v"
               stroke="#533AFD"
               strokeWidth={2}
-              fill="url(#fmvGrad)"
+              fill="url(#alignmentGrad)"
             />
           </AreaChart>
         </ResponsiveContainer>
@@ -138,12 +138,12 @@ export function MetricsGrid() {
     }
 
     if (idx === 1) {
-      // Card 1: Contracted Pipeline Velocity (Emerald wavy gradient area)
+      // Card 1: Completed Workbook Chapters Trend (Emerald wavy gradient area)
       return (
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={contractedPipelineTrend} margin={{ top: 2, right: 2, left: 2, bottom: 0 }}>
+          <AreaChart data={workbookEntriesTrend} margin={{ top: 2, right: 2, left: 2, bottom: 0 }}>
             <defs>
-              <linearGradient id="pipeGrad" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="entriesGrad" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="#057A55" stopOpacity={0.35} />
                 <stop offset="100%" stopColor="#057A55" stopOpacity={0.0} />
               </linearGradient>
@@ -154,7 +154,7 @@ export function MetricsGrid() {
                 if (active && payload && payload.length) {
                   return (
                     <div className="rounded-[4px] bg-[var(--color-surface)] border border-[var(--color-border)] px-2.5 py-1 text-xs font-medium shadow-xs text-[var(--color-text-primary)]">
-                      <span className="font-bold text-[#057A55] dark:text-emerald-400">${payload[0].value}M</span> Pipeline
+                      <span className="font-bold text-[#057A55] dark:text-emerald-400">{payload[0].value}</span> Chapters Completed
                     </div>
                   );
                 }
@@ -166,7 +166,7 @@ export function MetricsGrid() {
               dataKey="v"
               stroke="#057A55"
               strokeWidth={2}
-              fill="url(#pipeGrad)"
+              fill="url(#entriesGrad)"
             />
           </AreaChart>
         </ResponsiveContainer>
@@ -174,10 +174,10 @@ export function MetricsGrid() {
     }
 
     if (idx === 2) {
-      // Card 2: Contract Obligation Delivery SLA (Amber wavy gradient area)
+      // Card 2: Coach Evaluation SLA response rates (Amber wavy gradient area)
       return (
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={obligationDeliverySla} margin={{ top: 2, right: 2, left: 2, bottom: 0 }}>
+          <AreaChart data={evaluationReviewSla} margin={{ top: 2, right: 2, left: 2, bottom: 0 }}>
             <defs>
               <linearGradient id="slaGrad" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="#D97706" stopOpacity={0.35} />
@@ -261,7 +261,7 @@ export function MetricsGrid() {
             >
               {/* Card Header: Category Eyebrow + Badge (Anti-Collision Isolated) */}
               <div className="p-4 pb-2 flex items-center justify-between gap-2 min-w-0">
-                <span 
+                <span
                   className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-secondary)] truncate min-w-0"
                   title={metric.title}
                 >
@@ -317,7 +317,7 @@ export function MetricsGrid() {
               </span>
             </div>
             <p className="text-xs sm:text-sm text-[var(--color-text-secondary)] mt-1">
-              Real-time context serialization &amp; throughput across Asset Audit → Brand Match → Deck Synth → Obligation Guard
+              Real-time context serialization &amp; throughput across Intake Audit → Workbook Match → Evaluation Sync → Access Guard
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-4 text-xs sm:text-[13px] text-[var(--color-text-secondary)]">
