@@ -85,7 +85,7 @@ export function Footer() {
                   </div>
                 </div>
                 <p className="text-[11px] text-[var(--color-text-muted)] leading-relaxed pt-1">
-                  Secured with role access, data encryption, sequential modules, and progress checks.
+                  Role-based privacy and student progress tracking.
                 </p>
               </div>
 
